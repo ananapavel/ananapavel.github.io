@@ -1,0 +1,141 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <title>Buy Ticket</title>
+    <link
+      rel="apple-touch-icon"
+      href="https://wednesday.monster/wp-content/uploads/2022/12/cropped-Wednesday-Addams-at-Nevermore-Academy-2-180x180.png"
+    />
+    <link
+      rel="icon"
+      href="https://wednesday.monster/wp-content/uploads/2022/12/cropped-Wednesday-Addams-at-Nevermore-Academy-2-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="https://wednesday.monster/wp-content/uploads/2022/12/cropped-Wednesday-Addams-at-Nevermore-Academy-2-192x192.png"
+      sizes="192x192"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="navbar-container">
+        <div class="logo-container">
+          <h1 class="logo">Wednesday</h1>
+        </div>
+        <div class="menu-container">
+          <ul class="menu-list">
+            <li class="menu-list-item"><a href="index.html">Home</a></li>
+            <li class="menu-list-item"><a href="charachters.html">Cast</a></li>
+            <li class="menu-list-item active">
+              <a href="ticket.html">Ticket</a>
+            </li>
+            <li class="menu-list-item"><a href="scenes.html">Scenes</a></li>
+            <li class="menu-list-item"><a href="quiz.html">Quiz</a></li>
+            <li class="menu-list-item"><a href="about.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar">
+      <a href="index.html"><i class="left-menu-icon fas fa-home"></i></a>
+      <a href="charachters.html"><i class="left-menu-icon fas fa-users"></i></a>
+
+      <a href="scenes.html"><i class="left-menu-icon fas fa-tv"></i></a>
+      <a href="quiz.html"><i class="left-menu-icon fas fa-star"></i></a>
+
+      <a href="ticket.html"
+        ><i class="left-menu-icon fa-solid fa-ticket"></i
+      ></a>
+      <a href="about.html"><i class="left-menu-icon fas fa-question"></i></a>
+    </div>
+    <div class="mycontainer">
+      <div class="mycontent-container">
+        <div id="ticketForm">
+          <h1>Book Your Tickets. First Season Out!</h1>
+          <iframe
+            width="560"
+            height="315"
+            style="border-radius: 15px; padding-bottom: 20px"
+            src="https://www.youtube.com/embed/Di310WS8zLk?si=tYYBZQCEhZmxhbCp"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <form id="bookingForm">
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-default"
+                >Date</span
+              >
+              <input
+                type="date"
+                min="1"
+                class="form-control"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default"
+                lang="en-US"
+              />
+            </div>
+            <div class="input-group mb-3">
+              <label class="input-group-text" for="inputGroupSelect01"
+                >Ticket Type</label
+              >
+              <select class="form-select" id="inputGroupSelect01">
+                <option selected>Choose...</option>
+                <option value="1">General Admission</option>
+                <option value="2">VIP</option>
+              </select>
+            </div>
+
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-default"
+                >Quantity</span
+              >
+              <input
+                type="number"
+                min="1"
+                class="form-control"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default"
+                required
+              />
+            </div>
+
+
+          </form>
+
+          <p id="errorText" class="error-text"></p>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c21ea45a83.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
